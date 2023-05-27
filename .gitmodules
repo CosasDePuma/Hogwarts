@@ -6,3 +6,7 @@
 	path = ESEI/TAMI
 	url = https://github.com/CosasDePuma/Hogwarts
 	branch = ESEI/TAMI
+[submodule "ESEI/TSW"]
+	path = ESEI/TSW
+	url = https://github.com/CosasDePuma/Hogwarts
+	branch = ESEI/TSW
