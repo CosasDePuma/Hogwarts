@@ -10,13 +10,13 @@ import '../../styles/Modal.css';
 
 Modal.setAppElement("#root");
 
-class ModalWindow extends Component {
+class ModalAuth extends Component {
     render() {
-        const close = () => { this.props.openLogin(false); this.props.openRegister(false); }
+        const close = () => { this.props.openLogin(false); this.props.openRegister(false);}
 
         return (
             <Modal className="modal" overlayClassName="overlay"
-                isOpen={this.props.loginIsOpen || this.props.registerIsOpen }
+                isOpen={this.props.loginIsOpen || this.props.registerIsOpen || this.props.uploadIsOpen}
                 onRequestClose={close}>
                 
                 <div className="close">
@@ -24,11 +24,11 @@ class ModalWindow extends Component {
                 </div>
 
                 <Animal />
-
-                { this.props.loginIsOpen ? <Login /> : <Register /> }
+                { this.props.loginIsOpen ? <Login close={close} /> : <Register close={close} /> }
+              
             </Modal>
         );
     }
 }
 
-export default ModalWindow;
+export default ModalAuth;

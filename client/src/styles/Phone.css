@@ -165,7 +165,8 @@
  * -------------------------------------------
  */
 
-.mobile:hover {
+.mobile:hover,
+.mobile.up {
    /* Ajustamos visualmente los border */
    border-radius: 10px;
    /* Transformación */
@@ -177,12 +178,14 @@
            transform: var(--transformacion); /* Estándar */
 }
 
-.mobile:hover::before, .mobile:hover::after {
+.mobile:hover::before, .mobile:hover::after,
+.mobile.up::before, .mobile.up::after {
    /* Bordes oscurecidos a modo de sombra */
    background-color: #000;
 }
 
-.mobile:hover .glass {
+.mobile:hover .glass,
+.mobile.up .glass {
    /* Desaparece el brillo */
    background-color: #ffffff00;
    /* Sombreado */

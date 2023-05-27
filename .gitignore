@@ -1,7 +1,5 @@
-# Development
-/client/null
 # Dependencies
 /**/node_modules
 # Misc
-*.log
-.DS_Store
+/**/*.log
+/**/.DS_Store

@@ -19,11 +19,8 @@ CREATE TABLE users (
   username  varchar(20) NOT NULL UNIQUE,
   email     varchar(50) NOT NULL UNIQUE,
   passwd    varchar(100) NOT NULL,
-  birthday  date NOT NULL,
-  gender    varchar(1) NOT NULL,
 
-  PRIMARY KEY (ID),
-  CONSTRAINT chk_gender CHECK (gender = 'M' OR gender = 'F' OR gender = 'O')
+  PRIMARY KEY (ID)
 );
 
 -- --------------------------------------------------------
@@ -49,7 +46,7 @@ CREATE TABLE follows (
 --
 
 CREATE TABLE videos (
-  ID          int NOT NULL UNIQUE AUTO_INCREMENT,
+  ID          int NOT NULL AUTO_INCREMENT,
   user        int NOT NULL,
   title       varchar(100) NOT NULL,
   upload_date date NOT NULL,

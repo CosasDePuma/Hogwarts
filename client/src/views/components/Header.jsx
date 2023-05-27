@@ -44,28 +44,22 @@ class Header extends Component {
                     
                     <ul className="link">
                         <li>
-                            <Link to={isLogged() ? "/home" : "/"}>
+                            <Link to='/#/'>
                                 <Span id="header.home" defaultMessage={defaultLang["header.home"]} />
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="/#/trends">
                                 <Span id="header.trends" defaultMessage={defaultLang["header.trends"]} />
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="/#/hashtags">
                                 <Span id="header.hashtags" defaultMessage={defaultLang["header.hashtags"]} />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="#">
-                                <Span id="header.influencers" defaultMessage={defaultLang["header.influencers"]} />
                             </Link>
                         </li>
                     </ul>
 
-                    {console.log(isLogged())}
                     { isLogged() === false ? 
                         <ul className="account">
                             <li><div className="a" onClick={() => this.props.openLogin(true)}>
@@ -74,15 +68,20 @@ class Header extends Component {
                             <li><div className="a" onClick={() => this.props.openRegister(true)}>
                                 <Span id="register" defaultMessage={defaultLang["register"]} />
                             </div></li>
+                           
                         </ul>
                         :
                         <ul className="account">
-                            <li><div className="a" onClick={() => this.props.openLogin(true)}>
-                                @username
-                            </div></li>
-                            <li><div className="a" onClick={() => logOut(() => window.location.reload())}>
-                                <Span id="logout" defaultMessage={defaultLang["logout"]} />
-                            </div></li>
+                            <li>
+                                <div className="a" onClick={() => this.props.openUpload(true)}>
+                                    <Span id="upload" defaultMessage={defaultLang["upload"]} />
+                                </div>
+                            </li> 
+                            <li>
+                                <div className="a" onClick={() => logOut(() => window.location.href = "/#/")}>
+                                    <Span id="logout" defaultMessage={defaultLang["logout"]} />
+                                </div>
+                            </li>
                         </ul>
                     }
         

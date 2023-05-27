@@ -58,6 +58,7 @@
 
 .modal form {
     display: flex;
+    max-width: 348px;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;

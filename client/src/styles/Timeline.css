@@ -22,7 +22,8 @@
             transition: var(--transicion); /* Estándar */
 }
 
-.mobile:hover .timeline {
+.mobile:hover .timeline,
+.mobile.up .timeline {
     /* Aparición al pasar por encima el ratón */
     opacity: 1;
 }

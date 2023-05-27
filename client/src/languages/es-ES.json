@@ -2,8 +2,7 @@
     "header.home":          "Portada",
     "header.trends":        "Trending",
     "header.hashtags":      "Hashtags",
-    "header.influencers":   "Influencers",
-    
+    "upload":               "Subir video",
     "login":                "Entrar",
     "logout":               "Salir",
     "register":             "Regístrate",
@@ -11,7 +10,11 @@
     "pass":                 "Contraseña",
     "email":                "Email",
     "repeatpass":           "Repite la contraseña",
-
     "slogan.first":         "Vídeos ilimitados de",
-    "slogan.second":        "animalitos cuquis"
+    "slogan.second":        "animalitos cuquis",
+    "slogan.welcome":       "Las últimisimas",
+    "slogan.latest":        "novedades",
+    
+    "title":                "Titulo del video",
+    "video":                "Buscalo en tu galeria"
 }

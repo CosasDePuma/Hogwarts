@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FormattedMessage as Span } from 'react-intl';
 
-import { defaultLang } from '../../controllers/language.jsx';
+import { defaultLang, language } from '../../controllers/language.jsx';
 import { logIn } from '../../controllers/authentication.jsx';
 
 class Login extends Component {
@@ -9,7 +9,7 @@ class Login extends Component {
         super(props);
 
         this.state = {
-            form: { user: "", pass: "" }
+            form: { name: "", pass: "" }
         };
 
         this.handleChange = async (e) => {
@@ -30,9 +30,10 @@ class Login extends Component {
                     <label>
                         <Span id="user" defaultMessage={defaultLang["user"]} />
                     </label>
-                    <input name="user" type="text"
+                    <input name="name" type="text"
                         onChange={this.handleChange}
-                        autocomplete="off" pattern="[A-Za-z0-9_.]{4,20}" />
+                        autoComplete="off"
+                        pattern="[A-Za-z0-9_.]{4,20}" />
 
                     <label>
                         <Span id="pass" defaultMessage={defaultLang["pass"]} />
@@ -41,9 +42,12 @@ class Login extends Component {
                         onChange={this.handleChange}
                         onFocus={() => { document.querySelector('.animal .cortina').style = "height: 150px" }}
                         onBlur={() => { document.querySelector('.animal .cortina').style = "height: 20px" }}
-                        autocomplete="off" />
+                        autoComplete="off" />
     
-                    <input type="submit" value="Entrar" onClick={() => logIn(this.state.form, () => window.location.href = "./home" )} />
+                    <input type="submit" value={language === 'es' ? 'Enviar' : 'Send'} onClick={() => {
+                        logIn(this.state.form, () => window.location.href = '/#/home' );
+                        this.props.close();   
+                    } } />
                 </form>
             </div>
         );
