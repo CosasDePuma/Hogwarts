@@ -1,0 +1,185 @@
+/*  Fichero CSS empleado para el modo claro.    */
+* {
+  margin:0;
+  padding:0;
+}
+hr {
+  border: 1px solid lightblue;
+}
+.logLink {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-weight: normal;
+}
+.logLink:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #DDD;
+}
+a:hover{
+  text-decoration: none;
+  color: #FFF;
+}
+#userName{
+  font-size: 20px;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #DDD;
+  background-color: #1D2121;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+/* Esta clase era propia de Bootstrap 3 y al pasar a Bootstrap 4 fue eliminada, he decidido traerla de vuelta*/
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 15px;
+  border-bottom: 1px solid #eee;
+}
+.user-header {
+  padding-bottom: 9px;
+  margin: 50px 0 5px;
+  color: #DDD;
+}
+.header-icon{
+  width: 20px;
+  height: 20px;
+  margin: 4px 5px;
+}
+.navbarIcon{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+.navbarIcon:hover{
+  padding: 1px;
+}
+.fileIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.icono{
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+}
+.mIcon{
+  width: 20px;
+  height: 20px;
+}
+.lIcon{
+  width: 20px;
+  height: 20px;
+  margin-left: 1px;
+}
+.icono:hover {
+  padding: 1px;
+  color: #FFF;
+}
+.mIcon:hover{
+  padding: 1px;
+  color: #FFF;
+}
+.lIcon:hover {
+  padding: 1px;
+  color: #FFF;
+}
+.dropdown-menu {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: #F4F4F4;
+  font-weight: normal;
+  line-height: 0.2em;
+}
+.texmod {
+  display: inline-block;
+}
+@media (max-width: 330px){
+  body{
+    width: 320px;
+  }
+}
+/* CSS Login */
+#loginForm {
+  width: 320px;
+  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* CSS Register */
+.page-headerReg {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+#registerForm {
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* CSS Footer */
+#menssageBar{
+  margin-top: 10px;
+}
+#mouseClick:hover{
+  cursor: pointer;
+  cursor: hand
+}
+#newPromotedMatch {
+  color: black;
+}
+#newEvent {
+  color: black;
+}
+#newChamp {
+  color: black;
+}
+#newMatch {
+  color: black;
+}
+#newClass {
+  color: black;
+}
+#newTrack {
+  color: black;
+}
+#newBooking {
+  color: black;
+}
+#newEscuelaDeportiva {
+  color: black;
+}
+.regString {
+  color: #FFF;
+}
+.regString:hover {
+  color: #FFF;
+}
+.banniere{
+  width: 100%;
+  height: 150px;
+}
+.imgResize {
+  width: 20px;
+  height: 20px;
+}
+.imgResize:hover {
+  padding: 1px;
+}
+.colors {
+  color: #DDD;
+}
+.no {
+  background-color: #DDD;
+}
+.groupetto {
+  background-color: #DDD;
+  color: #1D2121;
+}
