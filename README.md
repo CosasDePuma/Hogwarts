@@ -3,8 +3,11 @@
     <h1>Hogwarts</h1>
     <h3>Welcome to my University projects repository</h3>
     <br/>
-</div>
 
 | Branch | School | Grade | Subject | Topics |
 | --- | --- | --- | --- | --- |
-| [ESEI/TFG](./tree/ESEI/TFG) | [ESEI](https://esei.uvigo.es/) | 4º / 2º | Trabajo Fin de Grado | Research, Development, Presentation |
+| [ESEI/TAMI](./tree/ESEI/TAMI) | [ESEI](https://esei.uvigo.es/) | 4º / 2º (Opt.) | [Técnicas Avanzadas de Manejo de Información](https://esei.uvigo.es/es/asignaturas/grao/tecnicas-avanzadas-de-manexo-de-informacion/) | OLAP Databases, Superset, Bussiness Intelligence... |
+| [ESEI/TFG](./tree/ESEI/TFG) | [ESEI](https://esei.uvigo.es/) | 4º / 2º | [Trabajo Fin de Grado](https://esei.uvigo.es/es/asignaturas/grao/traballo-de-fin-de-grao/) | Research, Development, Presentation |
+
+
+</div>

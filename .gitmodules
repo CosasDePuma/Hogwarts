@@ -2,3 +2,7 @@
 	path = ESEI/TFG
 	url = https://github.com/CosasDePuma/Hogwarts
 	branch = ESEI/TFG
+[submodule "ESEI/TAMI"]
+	path = ESEI/TAMI
+	url = https://github.com/CosasDePuma/Hogwarts
+	branch = ESEI/TAMI
