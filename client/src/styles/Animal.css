@@ -1,3 +1,9 @@
+/*
+ * .------------------------------------------
+ * | .ANIMAL
+ * ·------------------------------------------
+ */
+
 @keyframes cabeceo {
     from { transform: rotate(-2deg) scale(1) }
     50% { transform: rotate(2deg) scale(1.05) }

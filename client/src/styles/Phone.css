@@ -15,6 +15,27 @@
  * -------------------------------------------
  */
 
+ .welcome .tiktak {
+    /* Contenido centrado en la mitad derecha de la pantalla */
+    flex-basis: 58%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- LOGO --- */
+
+.tiktak .mobile img {
+    /* Centrado en pantalla */
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    opacity: .8;
+}
+
+/* --- PHONE --- */
+
 .mobile {
    /* Posición */
    position: relative;

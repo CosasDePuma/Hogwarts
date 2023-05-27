@@ -1,0 +1,19 @@
+/*
+ * .------------------------------------------
+ * | > .LOGO
+ * ·------------------------------------------
+ */
+
+.logo {
+    /* Logo fijado en la esquina inferior izquierda de la pantalla */
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+}
+
+.logo img {
+    /* Logo cuadrado */
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+}

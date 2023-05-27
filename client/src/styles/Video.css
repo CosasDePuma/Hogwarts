@@ -1,0 +1,68 @@
+/*
+ * .------------------------------------------
+ * | VIDEO
+ * ·------------------------------------------
+ */
+
+.timeline,
+.timeline .player video {
+    /* Tamaño */
+    width: 100%;
+    height: 100%;
+}
+
+.timeline .player {
+    /* Reproductor de vídeo */
+    width: 100%;
+    height: calc(100% + 4px);
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.player video {
+    /* Vídeo ajustado a la pantalla */
+    display: block;
+    object-fit: fill;
+}
+
+.player .icons {
+    /* Iconos laterales */
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.player .icons svg {
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.player .icons svg:hover {
+    opacity: 1;
+}
+
+.player .icons svg:nth-child(1):hover {
+    fill: #f59797;
+}
+
+.player .icons svg:nth-child(3):hover {
+    fill: #9ef5b8;
+}
+
+.player .icons svg:nth-child(2):hover {
+    fill: #9abdeb;
+}
+
+.player .user {
+    /* Nombre del usuario */
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+.player .user::before {
+    content: "@";
+}

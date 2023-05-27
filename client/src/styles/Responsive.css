@@ -1,20 +1,15 @@
 @media screen and (max-width: 1700px) {
-    .welcome .slogan { font-size: 40px; }
-    .welcome .tiktak .mobile { --mobilescale: 1.1 }
-}
-@media screen and (max-width: 1320px) {
-    .welcome .slogan { font-size: 35px; }
-    .welcome .tiktak .mobile { --mobilescale: .9 }
-    .logo img { --size: 80px }
-}
-@media screen and (max-width: 1150px) {
     html { overflow: hidden visible }
-    .app { height: auto }
-    .welcome { flex-direction: column; height: auto }
-    .welcome .slogan { font-size: 50px; align-items: center }
+    .welcome { flex-direction: column; height: auto; margin-top: 170px }
+    .welcome .slogan { font-size: 30px; align-items: center }
     .welcome .tiktak .mobile { --mobilescale: 1.4 }
     .logo img { --size: 60px }
-    .app .menu { display: block }
+    
+}
+@media screen and (max-width: 1050px) {
+    .welcome .tiktak .mobile { --mobilescale: 1.2 }
+    .logo { display: none }
+    .menu { display: block }
     header.row { display: none; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: 0; padding-top: 100px;
         z-index: 1; font-size: 30px; background-color: #00a19a; height: 100vh;
         flex-direction: column; align-items: center; justify-content: center }
@@ -25,35 +20,31 @@
     header .account li:first-child::before, header .account li:last-child::after, header li:not(:last-child)::after { content: ""; margin: 0 }
     header ul:not(:nth-child(2)) li:not(:last-child)::after { content: "|"; margin-left: 8px }
     header > a:last-child { display: block; }
-
-    .welcome {  margin-top: 100px; justify-content: start }
-    .welcome .tiktak { margin-top: 0 }
-}
-@media screen and (max-width: 1000px) {
-    .welcome .tiktak .mobile { --mobilescale: 1.2 }
-    .logo { display: none }
+    header .link { flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    header li, header > a { font-size: 25px; }
+    header ul:nth-child(3) li:not(:last-child)::after { content: ""; margin: 0 }
+    header .account { display: flex; flex-direction: column; align-items: center;}
+    .welcome .tiktak { margin-top: 10px }
 }
 @media screen and (max-width: 800px) {
-    .welcome .slogan { font-size: 45px; }
+    .slogan { font-size: 25px; }
     .welcome .tiktak .mobile { --mobilescale: 1 }
 }
 @media screen and (max-width: 600px) {
-    .welcome .slogan { font-size: 35px }
+    .slogan { font-size: 9px; margin: 10px; text-align: center; }
     .welcome .tiktak .mobile { --mobilescale: .8 }
 }
 @media screen and (max-width: 500px) {
-    .welcome .slogan { font-size: 30px }
     .welcome .tiktak .mobile { --mobilescale: .75 }
 }
 
 @media screen and (max-width: 478px) {
     header li, header > a { font-size: 25px; }
     header ul:nth-child(3) li:not(:last-child)::after { content: ""; margin: 0 }
-    header .account { display: flex; flex-direction: column; align-items: center;}
+    header .account { display: flex; flex-direction: column; align-items: center; }
 }
 
 @media screen and (max-width: 450px) {
-    .welcome .slogan { font-size: 20px }
     /* Ponemos el móvil en vertical */
     .mobile {
         border-radius: 10px; --transformacion: scale(var(--mobilescale)) rotateX(0) rotateZ(0);

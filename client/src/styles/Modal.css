@@ -1,0 +1,93 @@
+/*
+ * .-------------------------------------------
+ * | .MODAL
+ * ·-------------------------------------------
+ */
+
+.overlay { 
+    /* Position */
+    position: fixed;
+    top: 0; left: 0;
+    bottom: 0; right: 0;    
+    background-color: #585c5a33;
+}
+
+.modal {
+    /* Posición */
+    position: absolute;
+    top: 50%; left: 50%;
+    bottom: auto; right: auto;
+    transform: translate(-50%,-50%);
+    /* Estructura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Diseño */
+    width: 400px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    margin: auto;
+    padding: 40px 0;
+    /* Sombreado */
+    --sombra: 0 0 20px -10px #444;
+    -webkit-box-shadow: var(--sombra); /* Chrome */
+       -moz-box-shadow: var(--sombra); /* Firefox */
+            box-shadow: var(--sombra); /* Estándar */
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal #login, .modal #register {
+    width: calc(100% - 80px);
+}
+
+.modal h1 {
+    margin: 50px auto 20px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+}
+
+.modal form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.modal form label {
+    margin: 10px 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modal form input {
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.modal form input[type="submit"] {
+    margin: 20px 0 0 0;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    background-color: #00a19a;
+    cursor: pointer;
+}

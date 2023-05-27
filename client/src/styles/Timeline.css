@@ -1,0 +1,28 @@
+/*
+ * .------------------------------------------
+ * | .TIMELINE
+ * ·------------------------------------------
+ */
+
+.timeline {
+    position: relative;
+    overflow: hidden scroll;
+    scroll-snap-type: y mandatory;
+    margin: 0 50px 0 auto;
+    background-color: #000;
+}
+
+.mobile .timeline {
+    /* Transición de aparición */
+    opacity: 0;
+    --transicion: opacity .5s ease-in-out;
+    -webkit-transition: var(--transicion); /* Chrome, Opera 12, Safari 5 */
+       -moz-transition: var(--transicion); /* Firefox 4 */
+         -o-transition: var(--transicion); /* Opera 11 */
+            transition: var(--transicion); /* Estándar */
+}
+
+.mobile:hover .timeline {
+    /* Aparición al pasar por encima el ratón */
+    opacity: 1;
+}

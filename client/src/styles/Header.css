@@ -1,0 +1,72 @@
+/*
+ * .------------------------------------------
+ * | > HEADER
+ * ·------------------------------------------
+ */
+
+header {
+    /* Mostramos los elementos centrados en fila */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Tamaño */
+    height: 99px;
+    padding: 0px 100px;
+    /* Estilo de fuente */
+    font-size: 19px;
+    font-stretch: 100%;
+    justify-content: space-between;
+    font-family: 'Karla', sans-serif;
+}
+
+header li {
+    /* Elementos ajustados a su contenedor con una pequeña separación y en mayúsculas */
+    display: inline-block;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+header li:not(:last-child)::after {
+    /* Separador estético */
+    content: "|";
+    margin-left: 8px;
+}
+
+/* --- LINKS --- */
+
+header .link {
+    /* Separación entre el lenguaje y los links */
+    margin-left: 100px;
+}
+
+/* --- ACCOUNT --- */
+
+header .account {
+    /* Botones de sesión en el lado derecho */
+    float: right;
+    margin-left: auto;
+}
+
+header .account li:first-child::before, header .account li:last-child::after {
+    /* Contenido estético */
+    content: ".";
+    margin: 0 10px;
+}
+
+header > a:last-child {
+    display: none;
+}
+
+/* --- MENU --- */
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 30px; left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover::after { 
+    width: 0;
+}

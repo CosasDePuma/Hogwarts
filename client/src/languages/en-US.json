@@ -1,0 +1,17 @@
+{
+    "header.home":          "Home",
+    "header.trends":        "Trending",
+    "header.hashtags":      "Hashtags",
+    "header.influencers":   "Influencers",
+
+    "login":                "Log in",
+    "logout":               "Log out",
+    "register":             "Register",
+    "user":                 "Username",
+    "pass":                 "Password",
+    "email":                "Email",
+    "repeatpass":           "Repeat the password",
+
+    "slogan.first":         "Unlimited vids about",
+    "slogan.second":        "supacute animals"
+}

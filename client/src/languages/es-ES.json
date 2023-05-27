@@ -1,0 +1,17 @@
+{
+    "header.home":          "Portada",
+    "header.trends":        "Trending",
+    "header.hashtags":      "Hashtags",
+    "header.influencers":   "Influencers",
+    
+    "login":                "Entrar",
+    "logout":               "Salir",
+    "register":             "Regístrate",
+    "user":                 "Usuario",
+    "pass":                 "Contraseña",
+    "email":                "Email",
+    "repeatpass":           "Repite la contraseña",
+
+    "slogan.first":         "Vídeos ilimitados de",
+    "slogan.second":        "animalitos cuquis"
+}
