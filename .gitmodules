@@ -1,4 +1,4 @@
-[submodule "app"]
+[submodule "Masterchef"]
 	path = app
 	url = https://github.com/CosasDePuma/Masterchef
 	branch = main
