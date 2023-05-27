@@ -1,0 +1,172 @@
+/*
+ * -------------------------------------------
+ *  GLOBALES
+ * -------------------------------------------
+ */
+
+:root {
+    /* Variables de tamaño.*/
+    --mobilescale: 1.4;
+}
+
+/*
+ * -------------------------------------------
+ *  .MOBILE
+ * -------------------------------------------
+ */
+
+.mobile {
+   /* Posición */
+   position: relative;
+   /* Tamaño */
+   width: 300px;
+   height: 540px;
+   /* Borde */
+   border-width: 20px 2px 25px;
+   border-style: solid;
+   border-color: #fff;
+   border-radius: 0 5px;
+   border-top-left-radius: 10px;
+   /* Color */
+   background-color: #111;
+   /* Sombreado */
+   --sombra: 0 0 50px 0 #444;
+   -webkit-box-shadow: var(--sombra); /* Chrome */
+      -moz-box-shadow: var(--sombra); /* Firefox */
+           box-shadow: var(--sombra); /* Estándar */
+   /* Preservar el estilo 3D */
+   --estilo: preserve-3d;
+   -webkit-transform-style: var(--estilo); /* Chrome, Safari 4 */
+           transform-style: var(--estilo); /* Estándar */
+   /* Animación */
+   --transicion: all 0.5s ease-in-out;
+   -webkit-transition: var(--transicion); /* Chrome, Opera 12, Safari 5 */
+      -moz-transition: var(--transicion); /* Firefox 4 */
+        -o-transition: var(--transicion); /* Opera 11 */
+           transition: var(--transicion); /* Estándar */
+   /* Transformación */
+   --transformacion: scale(var(--mobilescale)) rotateX(45deg) rotateZ(45deg);
+   -webkit-transform: var(--transformacion) translateY(-50px) translateZ(-150px); /* Chrome, Opera 12, Safari 3 */
+      -moz-transform: var(--transformacion); /* Firefox 3 */
+       -ms-transform: var(--transformacion); /* IE 9 */
+        -o-transform: var(--transformacion); /* Opera 10 */
+           transform: var(--transformacion); /* Estándar */
+}
+
+.mobile::before, .mobile::after {
+   /* Decoradores */
+   content: "";
+   position: absolute;
+   pointer-events: none;
+   /* Transición */
+   --transicion: background-color 1.5s ease-out;
+   -webkit-transition: var(--transicion); /* Chrome, Opera 12, Safari 5 */
+      -moz-transition: var(--transicion); /* Firefox 4 */
+        -o-transition: var(--transicion); /* Opera 11 */
+           transition: var(--transicion); /* Estándar */
+}
+
+.mobile::before {
+   /* Decorador inferior */
+   width: 300px;
+   height: 30px;
+   top: 520px;
+   left: 0px;
+   background-color: #fff;
+   border-radius: 10px 9px 0 0;
+   /* Transformación */
+   --transformacion: rotateX(90deg) translateY(-15px) translateZ(15px);
+   -webkit-transform: var(--transformacion); /* Chrome, Opera 12, Safari 3 */
+      -moz-transform: var(--transformacion); /* Firefox 3 */
+       -ms-transform: var(--transformacion); /* IE 9 */
+        -o-transform: var(--transformacion); /* Opera 10 */
+           transform: var(--transformacion); /* Estándar */
+}
+
+.mobile::after {
+   /* Decorador inferior */
+   width: 30px;
+   height: 540px;
+   top: -20px;
+   right: -31px;
+   background-color: #bbb;
+   border-width: 20px 2px 25px;
+   border-style: solid;
+   border-color: #fff;
+   border-radius: 0 10px 6px 0;
+   /* Transformación */
+   --transformacion: rotateY(90deg) translateZ(-15px) translateX(15px);
+   -webkit-transform: var(--transformacion); /* Chrome, Opera 12, Safari 3 */
+      -moz-transform: var(--transformacion); /* Firefox 3 */
+       -ms-transform: var(--transformacion); /* IE 9 */
+        -o-transform: var(--transformacion); /* Opera 10 */
+           transform: var(--transformacion); /* Estándar */
+}
+
+/*
+ * -------------------------------------------
+ *  .MOBILE > .GLASS
+ * -------------------------------------------
+ */
+
+.mobile .glass {
+   /* Reflejo */
+   position: absolute;
+   top: 85px;
+   left: 95px;
+   width: 200px;
+   height: 100px;
+   background-color: #ffffff04;
+   border-radius: 90px 0 0 0;
+   /* Sombreado */
+   --sombra: 10px 10px 81px 7px #ffffff09;
+   -webkit-box-shadow: var(--sombra); /* Chrome */
+      -moz-box-shadow: var(--sombra); /* Firefox */
+           box-shadow: var(--sombra); /* Estándar */
+   /* Transición */
+   --transicion: all .4s ease-in-out;
+   -webkit-transition: var(--transicion); /* Chrome, Opera 12, Safari 5 */
+      -moz-transition: var(--transicion); /* Firefox 4 */
+        -o-transition: var(--transicion); /* Opera 11 */
+           transition: var(--transicion); /* Estándar */
+   /* Transformación */
+   --transformacion: rotateZ(-1deg) translateZ(1px) skewY(60deg);
+   -webkit-transform: var(--transformacion); /* Chrome, Opera 12, Safari 3 */
+      -moz-transform: var(--transformacion); /* Firefox 3 */
+       -ms-transform: var(--transformacion); /* IE 9 */
+        -o-transform: var(--transformacion); /* Opera 10 */
+           transform: var(--transformacion); /* Estándar */
+}
+
+/*
+ * -------------------------------------------
+ *  .MOBILE:HOVER
+ * -------------------------------------------
+ */
+
+.mobile:hover {
+   /* Ajustamos visualmente los border */
+   border-radius: 10px;
+   /* Transformación */
+   --transformacion: scale(var(--mobilescale)) rotateX(0) rotateZ(0);
+   -webkit-transform: var(--transformacion) translateY(0) translateZ(0); /* Chrome, Opera 12, Safari 3 */
+      -moz-transform: var(--transformacion); /* Firefox 3 */
+       -ms-transform: var(--transformacion); /* IE 9 */
+        -o-transform: var(--transformacion); /* Opera 10 */
+           transform: var(--transformacion); /* Estándar */
+}
+
+.mobile:hover::before, .mobile:hover::after {
+   /* Bordes oscurecidos a modo de sombra */
+   background-color: #000;
+}
+
+.mobile:hover .glass {
+   /* Desaparece el brillo */
+   background-color: #ffffff00;
+   /* Sombreado */
+   --sombra: none;
+   -webkit-box-shadow: var(--sombra); /* Chrome */
+      -moz-box-shadow: var(--sombra); /* Firefox */
+           box-shadow: var(--sombra); /* Estándar */
+}

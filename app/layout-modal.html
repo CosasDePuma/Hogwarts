@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>TikTak - Modal</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollo de ventanas modales">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/animal.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <!-- Disclaimer -->
+    <header class="row">Página de desarrollo para futura implementación en React.</header>
+
+    <!-- Modal -->
+    <div class="modal">
+        <a href="javascript:void(0)" class="close fa fa-close"></a>
+
+        <!-- Animal -->
+        <div class="animal">
+            <img src="public/img/bear.png" alt="Osito!" class="bear">
+            <div class="cortina"></div>
+        </div><!-- .animal -->
+
+        <!-- Login -->
+        <div id="login">
+            <h1>ENTRA</h1>
+            <form onsubmit="return false" method="post">
+                <label>Usuario</label>
+                <input name="user" type="text" autocomplete="off" pattern="[A-Za-z0-9_.]{4,20}">
+                <label>Contraseña</label>
+                <input name="pass" type="password" autocomplete="off">
+
+                <input type="submit" value="Entrar">
+            </form>
+        </div><!-- .login -->
+
+        <!-- Register -->
+        <div id="register">
+            <h1>REGÍSTRATE</h1>
+            <form onsubmit="return false" method="post">
+                <label>Usuario</label>
+                <input name="user" type="text" autocomplete="off" pattern="[A-Za-z0-9_.]{4,20}">
+                <label>Email</label>
+                <input name="email" type="email" autocomplete="off">
+                <label>Contraseña</label>
+                <input name="pass" type="password" autocomplete="off">
+                <label>Repite contraseña</label>
+                <input name="passchk" type="password" autocomplete="off">
+
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </div><!-- .register -->
+
+    <!-- JS -->
+    <script src="public/js/dev.js"></script>
+</body>
+
+</html>

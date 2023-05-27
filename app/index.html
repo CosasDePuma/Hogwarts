@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>TikTak</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TikTok Clone">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/mobile.css">
+    <link rel="stylesheet" href="public/css/animal.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
+</head>
+
+<body>
+    <!-- Aplicación -->
+    <div class="app">
+
+        <!-- Botón Menú -->
+        <div class="menu">
+            <a href="javascript:showMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <!-- Cabecera -->
+        <header class="row">
+            <!-- Idioma -->
+            <ul class="lang">
+                <li><a href="/">ES</a></li>
+                <li><a href="/en">EN</a></li>
+            </ul><!-- .lang -->
+            
+            <!-- Links -->
+            <ul class="link">
+                <li><a href="/">Portada</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Hashtags</a></li>
+                <li><a href="#">Influencers</a></li>
+            </ul><!-- .link -->
+
+            <!-- Cuenta -->
+            <ul class="account">
+                <li><a href="javascript:void(0)" onclick="login()">Entra</a></li>
+                <li><a href="javascript:void(0)" onclick="register()">Regístrate</a></li>
+            </ul><!-- .account -->
+
+            <!-- Salir -->
+            <a href="javascript:closeMenu()"><i class="fa fa-close"></i></a>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <section class="welcome row">
+                <!-- Slogan -->
+                <div class="slogan">
+                    <h1>VÍDEOS ILIMITADOS DE</h1>
+                    <h1>ANIMALITOS CUQUIS</h1>
+                </div><!-- .slogan -->
+
+                <!-- Movil -->
+                <div class="tiktak">
+                    <div class="mobile">
+                        <img src="public/img/tiktak.svg" alt="TikTak">
+                        <div class="glass"></div>
+
+                        <div class="timeline">
+                            <div class="player">
+                                <video src="internal/v/57a01cc5bd2e7218e42a113a2e14430a.mp4" autoplay loop
+                                    muted></video>
+                                <div class="icons">
+                                    <i class="fa fa-heart"></i>
+                                    <i class="fa fa-comments"></i>
+                                    <i class="fa fa-share-alt"></i>
+                                </div>
+                                <span class="user">script-kitty</span>
+                            </div><!-- .player -->
+                            <div class="player">
+                                <video src="internal/v/ac06aab1a6e0bfcd5f2056e9fa4706e9.mp4" autoplay loop
+                                    muted></video>
+                                <div class="icons">
+                                    <i class="fa fa-heart"></i>
+                                    <i class="fa fa-comments"></i>
+                                    <i class="fa fa-share-alt"></i>
+                                </div>
+                                <span class="user">bugsbunny</span>
+                            </div><!-- .player -->
+                        </div><!-- .timeline -->
+
+                    </div><!-- .mobile -->
+                </div><!-- .tiktak -->
+            </section><!-- .welcome -->
+
+            <div class="logo">
+                <img src="public/img/tiktak.svg" alt="TikTak">
+            </div>
+        </main>
+    </div><!-- .app -->
+
+    <!-- Modal -->
+    <div class="modal">
+        <a href="javascript:closeModal()" class="close fa fa-close"></a>
+
+        <!-- Animal -->
+        <div class="animal">
+            <img src="public/img/bear.png" alt="Osito!" class="bear">
+            <div class="cortina"></div>
+        </div><!-- .animal -->
+
+        <!-- Login -->
+        <div id="login">
+            <h1>ENTRA</h1>
+            <form onsubmit="return false" method="post">
+                <label>Usuario</label>
+                <input name="user" type="text" autocomplete="off" pattern="[A-Za-z0-9_.]{4,20}">
+                <label>Contraseña</label>
+                <input name="pass" type="password" autocomplete="off">
+
+                <input type="submit" value="Entrar">
+            </form>
+        </div><!-- .login -->
+
+        <!-- Register -->
+        <div id="register">
+            <h1>REGÍSTRATE</h1>
+            <form onsubmit="return false" method="post">
+                <label>Usuario</label>
+                <input name="user" type="text" autocomplete="off" pattern="[A-Za-z0-9_.]{4,20}">
+                <label>Email</label>
+                <input name="email" type="email" autocomplete="off">
+                <label>Contraseña</label>
+                <input name="pass" type="password" autocomplete="off">
+                <label>Repite contraseña</label>
+                <input name="passchk" type="password" autocomplete="off">
+
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </div><!-- .register -->
+
+    <!-- JS -->
+    <script src="public/js/main.js"></script>
+</body>
+
+</html>
